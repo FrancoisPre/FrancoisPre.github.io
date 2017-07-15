@@ -1,12 +1,17 @@
+.body{
+	background-color: #0099ff;
+}
+
 .poststudent{
 	margin: auto;
 	width: 75%;
 	padding: 5px;
 	border-style: solid;
     border-width: 3px;
+	background-color: white;
 }
 .postHeader {
-	font-size: 25px;
+	font-size: 1em;
 	text-align: center;
 	margin: auto;
 	width: 75%;
@@ -21,13 +26,14 @@
 .postContent {
 	margin: auto;
 	width: 100%;
-	font-size: 18px;
+	font-size: 1.5em;
 	text-align: center;
 }
 
 .postImage{
 	float:left;
 	display: inline-block;
+	margin: 5px;
 }
 
 .postBlock {
@@ -40,15 +46,43 @@
 	text-align: center;
 }
 
-.gameInfo{
-	font-size: 18px;
-	text-align: center;
+.MainHeader{
+	background-color: white;
+	border-bottom-style: solid;
+    border-width: 3px;
+	width: 100%;
+	height: 100px;
 }
 
+.MainName{
+	font-size: 3em;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.Contact{
+	display: inline-block;
+	float: right;
+	margin: 5px;
+}
+
+.BoxContactName{
+	width:75%;
+	margin: auto;
+}
+
+.gameInfo{
+	font-size: 1.5em;
+	text-align: center;
+}
+.gameTitle{
+	font-size: 2em;
+	text-align: center;
+}
 .collapseButton{
 	display: inline-block;
 	padding: 5px 115px;
-	font-size: 18px;
+	font-size: 1.5em;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
@@ -67,4 +101,10 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   
+}
+
+.projectHeader{
+	font-size: 2.5em;
+	text-align: center;
+	color: White;
 }

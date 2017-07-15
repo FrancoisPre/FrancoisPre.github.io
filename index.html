@@ -1,13 +1,67 @@
 ---
 layout: default
 ---
-
-<div class="buttoncontainer">
-	<button type="button" class="collapseButton" data-toggle="collapse" data-target="#studentprojects" > Projets Étudiants </button>
+<header class="MainHeader"> <!-- head -->
+	<div class="BoxContactName">
+		<div class ="MainName">
+			Fran&ccedilois Pr&eacutevost
+		</div>
+		<ul class ="Contact">
+			<a href="mailto:francois_pre@hotmail.com"> francois_pre@hotmail.com </a> </br>
+			<a href="https://linkedin.com/in/francoispre"> <img src="/images/Logo-2C-21px-TM.png" alt="LinkedIn"> </a> </br>
+			<a href="https://github.com/FrancoisPre"> <img  src="/images/GitHub_Logo.png" alt="GitHub"> </a> </br>
+		</ul>
+	</div>
+</header>
+<div> <!--Projets-->
+<div> <!--Projets Professionnels -->
+	<br>
+	<br>
+	<header class="projectHeader">
+		Projets Professionnels 
+	</header>
+	<br>
+					<ul class="poststudent-list">
+						{% assign list = site.categories["profProject"] %}
+						{% for profProject in list %}
+							<div class="poststudent">
+								<header class="postHeader">
+									<h1 class="gameTitle"> {{ profProject.title }} </h1>
+									<div class="postBlock">
+										<div class="postInfo">
+											<h2 class="gameInfo"> {{ profProject.engin }} </h2>
+											<h2 class="gameInfo"> {{ profProject.genre }} </h2>
+											<h2 class="gameInfo"> {{ profProject.annee }} </h2>
+										</div>
+										<div class="postImage">
+											{{ profProject.media }}
+										</div>
+									</div>
+								</header>
+								<br>
+								<div class="buttoncontainer">
+									<button type="button" class="collapseButton" data-toggle="collapse" data-target="#{{ "collapse" | prepend: profProject.idnum }}" > Détails </button>
+								<br>
+								<br>
+								<div class="postContent">
+									<div id="{{ "collapse" | prepend: profProject.idnum }}" class="collapse">
+									{{ profProject.content }}
+									</div>
+								</div>
+							</div>
+							<br>
+							</div>
+							<br>
+						{% endfor %}
+					</ul>
+</div>
+<div> <!--Projets Étudiants	-->	
 			<br>
 			<br>
-			<div>
-				<div id="studentprojects" class="collapse">
+			<header class="projectHeader">
+				Projets &Eacutetudiants
+			</header>
+			<br>
 					<ul class="poststudent-list">
 						{% assign list = site.categories["studentProject"] %}
 						{% for studentProject in list %}
@@ -21,17 +75,17 @@ layout: default
 											<h2 class="gameInfo"> {{ studentProject.annee }} </h2>
 										</div>
 										<div class="postImage">
-											<img src="https://static.comicvine.com/uploads/original/7/78486/3682414-4125179500-Cats-.jpg" alt="Cat face" width=250px>
+											{{ studentProject.media }}
 										</div>
 									</div>
 								</header>
 								<br>
 								<div class="buttoncontainer">
-									<button type="button" class="collapseButton" data-toggle="collapse" data-target="#{{ "collapse" | prepend: studentProject.title }}" > Détails </button>
+									<button type="button" class="collapseButton" data-toggle="collapse" data-target="#{{ "collapse" | prepend: studentProject.idnum }}" > Détails </button>
 								<br>
 								<br>
 								<div class="postContent">
-									<div id="{{ "collapse" | prepend: studentProject.title }}" class="collapse">
+									<div id="{{ "collapse" | prepend: studentProject.idnum }}" class="collapse">
 									{{ studentProject.content }}
 									</div>
 								</div>
@@ -41,6 +95,46 @@ layout: default
 							<br>
 						{% endfor %}
 					</ul>
-				</div>
-				</div>
+</div>
+<div> <!-- Game Jam -->
+	<br>
+	<br>		
+	<header class="projectHeader">
+		Game Jams
+	</header>
+	<br>
+					<ul class="poststudent-list">
+						{% assign list = site.categories["jamProject"] %}
+						{% for jamProject in list %}
+							<div class="poststudent">
+								<header class="postHeader">
+									<h1 class="gameTitle"> {{ jamProject.title }} </h1>
+									<div class="postBlock">
+										<div class="postInfo">
+											<h2 class="gameInfo"> {{ jamProject.engin }} </h2>
+											<h2 class="gameInfo"> {{ jamProject.genre }} </h2>
+											<h2 class="gameInfo"> {{ jamProject.annee }} </h2>
+										</div>
+										<div class="postImage">
+											{{ jamProject.media }} 
+										</div>
+									</div>
+								</header>
+								<br>
+								<div class="buttoncontainer">
+									<button type="button" class="collapseButton" data-toggle="collapse" data-target="#{{ "collapse" | prepend: jamProject.idnum }}" > Détails </button>
+								<br>
+								<br>
+								<div class="postContent">
+									<div id="{{ "collapse" | prepend: jamProject.idnum }}" class="collapse">
+									{{ jamProject.content }}
+									</div>
+								</div>
+							</div>
+							<br>
+							</div>
+							<br>
+						{% endfor %}
+					</ul>
+</div>
 </div>
