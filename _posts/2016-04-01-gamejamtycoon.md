@@ -6,7 +6,7 @@ category: jamProject
 engin: "Unity Engine 5"
 genre: "Gestion Compétitif"
 annee: "2016"
-media: <img src="/images/tycoon.png">
+media: <img src="/images/tycoon.jpg">
 ---
 <div>
 	<p>
