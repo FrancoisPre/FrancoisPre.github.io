@@ -6,7 +6,7 @@ category: jamProject
 engin: "Unity Engine 5"
 genre: "Action Tower Defence"
 annee: "2015"
-media: <img src="/images/intel.png">
+media: <img src="/images/intel.jpg">
 ---
 <div>
 	<p>

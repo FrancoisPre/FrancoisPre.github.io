@@ -6,7 +6,7 @@ category: jamProject
 engin: "Unity Engine 4"
 genre: "Tower Defence Platfomer"
 annee: "2015"
-media: <img src="/images/wookie.png">
+media: <img src="/images/wookie.jpg">
 ---
 <div>
 	<p>
