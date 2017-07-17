@@ -15,12 +15,25 @@
 	text-align: center;
 	margin: auto;
 	width: 75%;
+	height: 350px;
+	position: relative;
 }
 
 .postInfo {
 	float:right;
-	display: inline-block;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translateY(-50%);
+}
 
+.postImage{
+	float:left;
+	display: block;
+	margin: auto;
+	position: absolute;
+	right:55%
 }
 
 .postContent {
@@ -30,14 +43,14 @@
 	text-align: center;
 }
 
-.postImage{
-	float:left;
-	display: inline-block;
-	margin: 5px;
-}
+
 
 .postBlock {
 	display: inline-block;
+}
+
+.award{
+	width: 100%;
 }
 
 .buttoncontainer {

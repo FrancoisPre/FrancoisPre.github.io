@@ -6,7 +6,7 @@ category: studentProject
 engin: "Unreal Engine 4"
 genre: "Action"
 annee: "2015"
-media: <iframe width="425" height="240" src="https://www.youtube.com/embed/svLM4x4XHZc" frameborder="0" allowfullscreen></iframe>
+media: <iframe width="500" height="300"  src="https://www.youtube.com/embed/svLM4x4XHZc" frameborder="0" allowfullscreen></iframe>
 ---
 <div>
 	<p>
